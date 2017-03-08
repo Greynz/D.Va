@@ -22,6 +22,7 @@ function commands(bot, msg, command, params) {
         for (let j=0;j<pkgs[i].commands.length;j++) {
             cmd = pkgs[i].commands[j];
             if (cmd.alias.indexOf(command) !== -1) {
+                console.log(`command\t${command}\tparams\t${params}`);
                 cmd.action(bot, msg, params);
                 return;
             }

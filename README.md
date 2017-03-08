@@ -47,9 +47,16 @@ MISC
 
 ### Voice
 Voice requires ffmpeg in your path and has only been tested on Ubuntu 14.04.
-The built in play function will first attempt to play as a YouTube link, and then will attempt to use ffmpeg to play it. It has only been tested with links to .mp3, .wav, .webm, and .ogg. 
-The built in sfx function will work with any .mp3 file in the sfx/ folder.
+The built in play function will first attempt to play as a YouTube link (with support for linking at certain times), and then will attempt to use ffmpeg to play it. It has only been tested with links to .mp3, .wav, .webm, and .ogg. 
+The built in sfx function will work with any .mp3 file in the sfx/ folder
 The built in dva function will a random file from the dvasfx/ folder. I found my D.Va sound effects [here].
+The built in wow function will play a random wow npc sound. It can be filtered in the form of `!wow race gender`
+
+All of the voice commands support adjustment of pitch (0.5 - 1.5) and tempo (any number) like so:
+```javascript
+!p https://www.youtube.com/watch?v=zoi5kc8NCsM&feature=youtu.be&t=15 1.25 0.75
+```
+
 
 ### License
 MIT License

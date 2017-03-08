@@ -14,8 +14,7 @@ const messageHandler = function(e){
   if(e && e.message && e.message.content && e.message.content[0] === "!") {
     // !command argument argument argument ...
     const params = e.message.content.split(" ");
-    const command = params.shift().substr(1);
-    // console.log('Message received: ', command, params);
+    const command = params.shift().substr(1).toLowerCase();
     packagemanager(client, e.message, command, params);
   }
 };

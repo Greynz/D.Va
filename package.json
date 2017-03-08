@@ -1,13 +1,13 @@
 {
   "name": "D.Va Discord Bot",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "author": {
     "name": "Rob",
-    "email": "robertpohlman@gmail.com"
+    "email": "rob@pohlman.co"
   },
   "dependencies": {
     "discordie": "*",
@@ -15,10 +15,7 @@
     "google-images": "^1.0.0",
     "request": "^2.69.0",
     "xml2js": "^0.4.16",
-    "ytdl-core": "^0.7.10"
-  },
-  "engines": {
-    "node": "5.x.x"
+    "ytdl-core": "*"
   },
   "keywords": [
     "node",

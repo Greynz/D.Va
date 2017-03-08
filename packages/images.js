@@ -92,6 +92,9 @@ module.exports = {
                                 if (res && res.posts && res.posts.post && typeof res.posts.post[0]['$'] !== 'undefined') {
                                     const post = res.posts.post[0]['$'];
                                     let ret = post.file_url;
+                                    if (ret.indexOf('//') === 0) {
+                                        ret = 'http:' + ret;
+                                    }
                                     if (post.tags) {
                                         ret += '\n';
                                         const tags = post.tags.split(' ');

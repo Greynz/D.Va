@@ -1,6 +1,10 @@
 module.exports = {
-  token: 'some-really-cool-bot-token',
+  token: '',
   packages: ['misc', 'images', 'voice'],
-  googleCseId: '12345:abcde',
-  googleApiKey: 'asdf-qwerty-asdf',
+  googleCseId: '',
+  googleApiKey: '',
 };
+
+
+// https://discordapp.com/developers/applications/me
+// https://discordapp.com/api/oauth2/authorize?client_id={CLIENT ID}&scope=bot&permissions=0
